@@ -56,6 +56,6 @@ public void downloadDriver(){
        assertFalse(driver.findElements(By.xpath("//*[@class='error-button']")).isEmpty(), "Epic sadface: Username and password do not match any user in this service");
    }
 
-  // @AfterMethod
- // public void  tearDown(){driver.quit();}
+  @AfterMethod
+ public void  tearDown(){driver.quit();}
 }
